@@ -28,8 +28,9 @@ namespace fastdds {
 namespace dds {
 
 // TODO
-std::string generate_idl_schema(
-        const traits<DynamicType>::ref_type& dynamic_type);
+ReturnCode_t generate_idl_schema(
+        const traits<DynamicType>::ref_type& dynamic_type,
+        std::string& idl_schema) noexcept;
 
 } // dds
 } // fastdds
