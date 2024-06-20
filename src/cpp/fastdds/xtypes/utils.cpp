@@ -39,7 +39,7 @@
 #include "dynamic_types/MemberDescriptorImpl.hpp"
 #include "dynamic_types/TypeDescriptorImpl.hpp"
 
-#include "dyn_type_tree.hpp"
+#include "type_conversion/dyn_type_tree.hpp"
 
 #include "utils/collections/Tree.hpp"
 
