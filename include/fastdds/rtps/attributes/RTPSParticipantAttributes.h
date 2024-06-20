@@ -129,6 +129,16 @@ inline std::ostream& operator <<(
     return output;
 }
 
+/**
+ * Returns the guidPrefix associated to the given server id
+ * @param[in] id of the default server whose guidPrefix we want to retrieve
+ * @param[out] guid reference to the guidPrefix to modify
+ * @return true if the server guid can be delivered
+ */
+FASTDDS_EXPORTED_API bool get_server_client_default_guidPrefix(
+        int id,
+        fastdds::rtps::GuidPrefix_t& guid);
+
 //! Filtering flags when discovering participants
 enum ParticipantFilteringFlags : uint32_t
 {
